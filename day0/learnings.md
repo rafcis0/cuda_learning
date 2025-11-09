@@ -1,4 +1,12 @@
-1. CPU programs work sequentially. So in this case add.cpp grabs and does one addition at a time (obviously this can be parallelized or hyperthreaded, but let's keep it dumb atm)
+Must admit I started reading:
+https://developer.nvidia.com/blog/even-easier-introduction-cuda/
+Some of: https://jax-ml.github.io/scaling-book/gpus/
+And ch1 and 2 of: https://edoras.sdsu.edu/~mthomas/docs/cuda/cuda_by_example.book.pdf
+
+
+Ok so my notes:
+
+1. know that CPU programs work sequentially. So in this case add.cpp grabs and does one addition at a time (obviously this can be parallelized or hyperthreaded, but let's keep it dumb atm)
 
 2. GPUs do as many iterations as threads at a time in parallel. So in this case add_gpu.cpp grabs and does the three additions at the same time.
 
